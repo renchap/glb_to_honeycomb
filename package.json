@@ -1,0 +1,23 @@
+{
+  "name": "glb_to_honeycomb",
+  "version": "0.0.1",
+  "dependencies": {
+    "fastify": "^4.3.0",
+    "libhoney": "^3.1.1"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.223",
+    "@swc/register": "^0.1.10",
+    "@types/node": "^18.6.3",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "build": "swc -d dist src/",
+    "dev": "node -r '@swc/register' src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "prettier": {
+    "semi": false
+  }
+}
